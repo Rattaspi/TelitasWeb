@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fundas",
+  "info": {
+    "singularName": "funda",
+    "pluralName": "fundas",
+    "displayName": "Funda"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descripcion": {
+      "type": "blocks"
+    },
+    "imagenes": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Funda de libro",
+        "Punto de libro",
+        "Coletero",
+        "Tote bag",
+        "Funda de gafas",
+        "Funda de movil",
+        "Funda de portatil",
+        "Cubresolapas",
+        "Ilustraciones"
+      ]
+    }
+  }
+}
