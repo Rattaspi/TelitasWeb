@@ -1,131 +1,43 @@
-############################
-# OS X
-############################
+# Dependencias de Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-.Spotlight-V100
-.Trashes
-._*
+# Entornos
+.env
+.env.*.local
 
+# Compilados y cachés
+.cache/
+build/
+dist/
+.tmp/
+.coverage/
 
-############################
-# Linux
-############################
-
-*~
-
-
-############################
-# Windows
-############################
-
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
-
-
-############################
-# Packages
-############################
-
-*.7z
-*.csv
-*.dat
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.seed
-*.so
-*.swo
-*.swp
-*.swn
-*.swm
-*.out
-*.pid
-
-
-############################
-# Logs and databases
-############################
-
-.tmp
-*.log
-*.sql
+# Base de datos local de desarrollo (si usas SQLite)
 *.sqlite
 *.sqlite3
 
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-############################
-# Misc.
-############################
+# VSCode y otros entornos
+.vscode/
+.idea/
 
-*#
-ssl
-.idea
-nbproject
-public/uploads/*
-!public/uploads/.gitkeep
-.tsbuildinfo
-.eslintcache
+# Archivos de Strapi específicos
+public/uploads/
 
-############################
-# Node.js
-############################
+# Logs
+*.log
 
-lib-cov
-lcov.info
-pids
-logs
-results
-node_modules
-.node_history
+# PM2 logs y procesos
+pids/
+logs/
+*.pid
+*.seed
 
-############################
-# Package managers
-############################
-
-.yarn/*
-!.yarn/cache
-!.yarn/unplugged
-!.yarn/patches
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
-yarn-error.log
-
-############################
-# Tests
-############################
-
-coverage
-
-############################
-# Strapi
-############################
-
-.env
-license.txt
-exports
-.strapi
-dist
-build
-.strapi-updater.json
-.strapi-cloud.json
+# Docker (si lo usas)
+docker-compose.override.yml
