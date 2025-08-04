@@ -27,6 +27,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Archivos de Strapi específicos
+public/uploads/
+
 # Logs
 *.log
 
